@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Startpage</title>
+<link rel="stylesheet" type="text/css" href="tyylit.css">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+
+		var day = today.getDate()
+		var month = today.getMonth() + 1
+		var year = today.getFullYear()
+
+
+    document.getElementById('kello').innerHTML =
+    h + ":" + m + ":" + s + "<br>" + day + "." + month + "." + year;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+
+<!-- clock and links are in this "container" element-->
+<div id="container">
+
+    <!-- here is the clock in its own element-->
+    <div id="kello">
+
+    </div>
+
+<!-- bookmarks in separate "book" elements -->
+
+    <div id="book1">
+
+      <a href="http://www.facebook.com">Facebook</a><br>
+      <a href="https://twitter.com/">Twitter</a><br>
+      <a href="http://www.youtube.com">Youtube</a><br>
+      <a href="https://soundcloud.com/">Soundcloud</a><br>
+      <a href="your url here"></a><br>
+      <a href="http://www.outlook.com">Outlook</a></a><br>
+      <a href="https://mail.google.com">Gmail</a><br>
+      <a href="your url here"></a><br>
+      <a href="http://www.foreca.fi/Finland/Helsinki/Itakeskus">Foreca Itäkeskus</a><br>
+    </div>
+
+    <div id="book2">
+
+      <a href="http://www.reddit.com/r/leagueoflegends/">r/League of Legends</a><br>
+      <a href="http://www.reddit.com/r/unixporn/">r/Unixporn</a><br>
+      <a href="http://www.reddit.com/r/battlestations">r/Battlestations</a><br>
+      <a href="http://www.reddit.com/r/minimalism/">r/Minimalism</a><br>
+      <a href="https://www.reddit.com/r/DIY/">r/DYI</a><br>
+      <a href="https://www.reddit.com/r/linux/">r/Linux</a><br>
+      <a href="https://www.reddit.com/r/raspberry_pi/">r/Raspberry Pi</a><br>
+      <a href="https://www.reddit.com/r/slashw/">r/Slashw</a><br>
+      <a href="https://www.reddit.com/r/Ubuntu/">r/Ubuntu</a><br>
+    </div>
+
+    <div id="book3">
+
+      <a href="https://boards.4chan.org/g/">/g</a><br>
+      <a href="https://boards.4chan.org/w/">/w</a><br>
+      <a href="https://boards.4chan.org/wg/">/wg</a><br>
+      <a href="https://boards.4chan.org/diy/">/diy</a><br>
+      <a href="your url here"></a><br>
+      <a href="https://www.twitch.tv/">Twitch</a><br>
+      <a href="https://www.netflix.com">Netflix</a><br>
+      <a href="your url here"></a><br>
+      <a href="http://areena.yle.fi">Yle Areena</a><br>
+    </div>
+
+    <div id="extra">
+      </div>
+
+</div>
+
+</body>
+</html>
