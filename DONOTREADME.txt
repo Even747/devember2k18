@@ -1,6 +1,6 @@
 I told you not to read me.
 
-Know we know who won't follow the rules.
+Now we know who won't follow the rules.
 
 
 
