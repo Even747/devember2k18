@@ -3,7 +3,7 @@ print("Hello!")
 
 # next lets ask a password
 
-pw = raw_input("Write down a password, please: ")
+pw = input("Write down a password, please: ")
 
 # what gets printed out depends on the input
 

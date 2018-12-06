@@ -1,6 +1,6 @@
 # first, lets say hello
 
-print "Why hello there, how are you doing?"
+print ("Why hello there, how are you doing?")
 
 # then lets ask some random numer from user
 
@@ -18,5 +18,5 @@ ans = input("Was I right? y/n")
 if ans == "y":
 	print("Well, this must be magic :)")
 else:
-	print("I think someone is lying. Thats naughty!")
+	print("I think someone is lying. That's naughty!")
 
