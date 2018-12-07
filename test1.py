@@ -18,5 +18,31 @@ list5 = ['Foo', 'Blaa', 42, 747, 'idk wtf'];
 
 print (list4[0:5])
 print (list2[1:10])
-print (list5[1,3,5]) #find out how to access only certain list entries
+#print (list5[1,3,5]) find out how to access only certain list entries
 
+import time
+import calendar
+
+print (time.localtime());
+
+cal = calendar.month(2018, 12)
+print ("Here is the calendar:")
+print (cal)
+
+def print_func( par ):
+    print ("Hello: ", par)
+    return
+
+print_func("Mary")
+print_func("James")
+print_func("Liz")
+
+def xyz( par ):
+    print ("This is just a test print")
+    print ("Next line will print out what ever you want")
+    print (par)
+    return
+
+xyz("Blaa Blaa")
+
+xyz("FFFUUUUUUUU--")
