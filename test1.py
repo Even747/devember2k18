@@ -37,12 +37,13 @@ print_func("Mary")
 print_func("James")
 print_func("Liz")
 
-def xyz( par ):
-    print ("This is just a test print")
-    print ("Next line will print out what ever you want")
-    print (par)
-    return
+import moduletest
 
-xyz("Blaa Blaa")
+moduletest.xyz("Jee Jee")
+moduletest.math(1,2)
 
-xyz("FFFUUUUUUUU--")
+
+cat = moduletest.Animal('Rollo', 33)
+
+print(cat.toString())
+
