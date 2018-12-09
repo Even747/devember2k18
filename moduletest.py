@@ -39,3 +39,9 @@ class Animal:
         def toString(self):
             return "{} is {} cm tall".format(self.__name,
                                              self.__height)
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
