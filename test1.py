@@ -58,7 +58,7 @@ print("\n")
 #I try to figure out whats the prolem later.
 #cat = moduletest.Animal('Rollo', 33)
 
-#print(cat.
+#print(cat.__name, cat.__height)
 
 
 p1 = moduletest.Person('Mike', 42)
