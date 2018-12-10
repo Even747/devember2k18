@@ -21,24 +21,24 @@ class Animal:
         self.__height = height
 
 
-        def set_name(self, name):
-            self.__name = name
+    def set_name(self, name):
+        self.__name = name
 
-        def set_height(self, height):
-            self.__height = height
+    def set_height(self, height):
+        self.__height = height
 
-        def get_name(self):
-            return self.__name
+    def get_name(self):
+        return self.__name
 
-        def get_height(self):
-            return str(self.__height)
+    def get_height(self):
+        return str(self.__height)
 
-        def get_type(self):
-                print ("Animal")
+    def get_type(self):
+        print ("Animal")
 
-        def toString(self):
-            return "{} is {} cm tall".format(self.__name,
-                                             self.__height)
+    def abc(self):
+        return "{} is {} cm tall".format(self.__name,
+                                        self.__height)
 
 
 class Person:

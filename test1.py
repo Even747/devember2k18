@@ -47,20 +47,19 @@ print("\n")
 '''
 import moduletest
 
-'''
+
 moduletest.xyz("Jee Jee")
+print("\n")
 moduletest.math(1,2)
 print("\n")
-print("\n")
+
+cat = moduletest.Animal('Rollo', 33)
+
+print(cat.get_name(),cat.get_height())
+print(cat.abc())
+
 '''
-
-#Commented this out to avoid errors.
-#I try to figure out whats the prolem later.
-#cat = moduletest.Animal('Rollo', 33)
-
-#print(cat.__name, cat.__height)
-
-
 p1 = moduletest.Person('Mike', 42)
 
 print("Developer name is: ", p1.name,',and age is: ',p1.age)
+'''
