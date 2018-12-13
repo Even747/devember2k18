@@ -47,7 +47,7 @@ print("\n")
 '''
 import moduletest
 
-
+'''
 moduletest.xyz("Jee Jee")
 print("\n")
 moduletest.math(1,2)
@@ -58,8 +58,36 @@ cat = moduletest.Animal('Rollo', 33)
 print(cat.get_name(),cat.get_height())
 print(cat.abc())
 
-'''
 p1 = moduletest.Person('Mike', 42)
 
 print("Developer name is: ", p1.name,',and age is: ',p1.age)
 '''
+
+#file I/O testing
+'''
+file1 = open("test.txt", "wb")
+
+file1.write(bytes("Write this text to the test file\n", "UTF-8"))
+file1.write(bytes("Write this too to the test file: LOL this works?","UTF-8"))
+
+file1.close()
+'''
+
+file1 = open("test.txt", "r+")
+file2 = open('readtest.txt', 'r+')
+
+read_text = file1.read()
+print(read_text)
+
+print('\n')
+
+read_text = file2.read()
+print(read_text)
+
+
+
+
+
+
+
+
