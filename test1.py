@@ -72,7 +72,7 @@ file1.write(bytes("Write this too to the test file: LOL this works?","UTF-8"))
 
 file1.close()
 '''
-
+'''
 file1 = open("test.txt", "r+")
 file2 = open('readtest.txt', 'r+')
 
@@ -83,6 +83,31 @@ print('\n')
 
 read_text = file2.read()
 print(read_text)
+'''
+
+
+# just testing functions
+def printme(str, str2):
+    print(str, str2)
+    print(str)
+    print(str2)
+    return
+
+printme('Hi!', 'Hi again!')
+
+# Function definition is here
+def sum( arg1, arg2 ):
+   # Add both the parameters and return them."
+   total = arg1 + arg2
+   print ("Inside the function : ", total)
+   return
+
+# Now you can call sum function
+total = sum( 10, 20 )
+print ("Outside the function : ", total )
+
+
+
 
 
 
