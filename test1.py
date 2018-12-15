@@ -106,6 +106,11 @@ def sum( arg1, arg2 ):
 total = sum( 10, 20 )
 print ("Outside the function : ", total )
 
+print('\n')
+
+x = input('something:')
+print(x)
+
 
 
 
