@@ -85,7 +85,7 @@ read_text = file2.read()
 print(read_text)
 '''
 
-
+'''
 # just testing functions
 def printme(str, str2):
     print(str, str2)
@@ -110,6 +110,8 @@ print('\n')
 
 x = input('something:')
 print(x)
+'''
+
 
 
 
