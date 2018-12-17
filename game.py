@@ -14,5 +14,7 @@ print('Hello {}'.format(name),', hopefully you are ready, because now the fight'
 #The simple fighting mechanism
 #This will simply take random number, and based on that number you either win or lose
 
-for x in range(10):
-    print random.randint(1,101)
+import random
+num = random.randint(1,11)
+print(num)
+
