@@ -23,8 +23,18 @@ num = random.randint(1,6)
 #just to make sure the code works :)
 print(num)
 
-if num >= (5):
-    print('You won the fight! Congratulations!')
-else:
-    print('You lost the fight :(')
+yesChoice = ['yes', 'y']
+noChoice = ['no', 'n']
+
+
+
+a = input('Do you want to fight, or not? y/n?').lower()
+if a in yesChoice:
+        if num >= (5):
+            print('You won the fight! Congratulations!')
+        else:
+            print('You lost the fight :(')
+elif a in noChoice:
+        print('The game ends.' '\n' + 'Bye bye!')
+
 

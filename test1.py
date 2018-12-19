@@ -125,7 +125,6 @@ print(num)
 
 name = ('James')
 print('Hello {}, how are you doing?'.format(name))
-
 print('Hello', name + ', how are you doing?')
 
 
