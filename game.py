@@ -6,35 +6,27 @@ import gmodule
 
 print('Hello!')
 print('\n')
-time.sleep(1)
+#time.sleep(1)
 print('Welcome to my test game.')
 name = input('Name your character: ')
 print('Hello {}, hopefully you are ready, because now the fight'
                      ' begins!'.format(name))
-
-#The simple fighting mechanism
-#This will simply take random number,
-#and based on that number you either win or lose
-#The idea is to simulate a dice roll
-
-import random
+#Script will "roll a dice" here to determine if player wins or loses
 num = random.randint(1,6)
-
 #This print is just output what the random number is,
 #just to make sure the code works :)
 print(num)
+#Script for fighting is located in different file, so here we will imput the random number
+#to the fight script
+gmodule.fight(num)
+
 
 yesChoice = ['yes', 'y']
 noChoice = ['no', 'n']
 
-
-
 a = input('Do you want to fight, or not? y/n?').lower()
 if a in yesChoice:
-        if num >= (5):
-            print('You won the fight! Congratulations!')
-        else:
-            print('You lost the fight :(')
+        gmodule.fight(num)
 elif a in noChoice:
         print('The game ends.' '\n' + 'Bye bye!')
 
