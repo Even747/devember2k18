@@ -121,12 +121,15 @@ import random
 num = random.randint(1,10)
 print(num)
 '''
-
-
+'''
 name = ('James')
 print('Hello {}, how are you doing?'.format(name))
 print('Hello', name + ', how are you doing?')
+'''
 
+import gmodule
+
+gmodule.fight()
 
 
 
