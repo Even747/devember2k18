@@ -7,10 +7,12 @@ import gmodule
 print('Hello!')
 print('\n')
 #time.sleep(1)
+
 print('Welcome to my test game.')
-name = input('Name your character: ')
-print('Hello {}, hopefully you are ready, because now the fight'
-                     ' begins!'.format(name))
+
+nimi = input('Name your character: ')
+print("Hello {}, hopefully you are ready, because now the fight begins!".format(nimi))
+
 #Script will "roll a dice" here to determine if player wins or loses
 num = random.randint(1,6)
 #This print is just output what the random number is,
@@ -29,5 +31,7 @@ if a in yesChoice:
         gmodule.fight(num)
 elif a in noChoice:
         print('The game ends.' '\n' + 'Bye bye!')
+else:
+        print ('That is not a valid input')
 
 
