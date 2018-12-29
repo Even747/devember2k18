@@ -127,9 +127,14 @@ print('Hello {}, how are you doing?'.format(name))
 print('Hello', name + ', how are you doing?')
 '''
 
+import random
+import string
 import gmodule
 
-gmodule.fight()
+gmodule.namegen()
+
+
+
 
 
 

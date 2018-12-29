@@ -1,7 +1,14 @@
-#This is the main executable script for the game
+# This is the main executable script for the game
 
 import time
 import gmodule
+
+# Purpose for this "namegen" will be revealed later. :)
+aname = gmodule.namegen()
+print(aname)
+print(aname)
+print(aname)
+
 
 print('Hello!')
 print('\n')
@@ -10,28 +17,18 @@ print('\n')
 print('Welcome to my test game.')
 
 nimi = input('Name your character: ')
-print("Hello {}, hopefully you are ready, because now the fight begins!".format(nimi))
+print("Hello {}, hopefully you are ready, "
+      "because now the fight begins!".format(nimi))
 time.sleep(1)
 
-#Script for fighting is located in different file
-#First the fighting method is used once,
-#and after that player is asked if he want's to fight again
+# Script for fighting is located in different file
+# First the fighting method is used once,
+# and after that player is asked if he want's to fight again
 
-gmodule.fight()
+gmodule.battle.fight()
+gmodule.battle.rety()
 
-'''
-yesChoice = ['yes', 'y']
-noChoice = ['no', 'n']
+bye1 = 'Thank you for playing! \n'
+bye2 = 'The game will now exit.'
 
-while True:
-        #gmodule.fight()
-        cont = input('Would you like to fight again? y/n'.lower())
-        if cont in yesChoice:
-                gmodule.fight()
-        elif cont in (noChoice):
-                break
-        else:
-                print('Please input either "yes" or "no".')
-'''
-
-
+print(bye1 + bye2)
