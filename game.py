@@ -6,8 +6,6 @@ import gmodule
 # Purpose for this "namegen" will be revealed later. :)
 aname = gmodule.namegen()
 print(aname)
-print(aname)
-print(aname)
 
 
 print('Hello!')
