@@ -1,11 +1,36 @@
 # This is external file for modules and other reusable code
 import random
 import string
+import sys
+
+# Title menu for the game
+
+class tmenu():
+
+    def menu():
+        print('What would you like to do next?')
+        print('Please make a selection: ')
+        print('1. Start the game')
+        print('2. Who made this?')
+        print('3. Exit game')
+
+        first = [1]
+        second = [2]
+        third = [3]
+
+        while True:
+            select = input('')
+            if select in first:
+                break
+            elif select in second:
+                print('This game was created as a devember2k18 project yada yada')
+                return
+            elif select in third:
+                sys.exit()
 
 
-# Method for fight mechanism
-from typing import Any, Union
 
+# Fight mechanism
 
 class battle():
 
