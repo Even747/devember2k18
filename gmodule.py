@@ -14,18 +14,19 @@ class tmenu():
         print('2. Who made this?')
         print('3. Exit game')
 
-        first = [1]
-        second = [2]
-        third = [3]
+        first = ['1']
+        second = ['2']
+        third = ['3']
 
         while True:
-            select = input('')
+            select = input()
             if select in first:
                 break
             elif select in second:
                 print('This game was created as a devember2k18 project yada yada')
-                return
+                continue
             elif select in third:
+                print('Thanks for playing! Exiting...')
                 sys.exit()
 
 

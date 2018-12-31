@@ -5,7 +5,10 @@ import gmodule
 
 # Purpose for this "namegen" will be revealed later. :)
 aname = gmodule.namegen()
-print(aname)
+
+# Title menu
+
+gmodule.tmenu.menu()
 
 
 print('Hello!')
